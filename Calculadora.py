@@ -6,7 +6,7 @@ while True:
     print('5 - Divisão inteira')
     print('6 - Módulo / Resto')
     print('7 - Potenciação')
-    operação = input('Escola uma opção:')
+    operação = input('Escolha uma opção:')
 
     while True:
         try:
@@ -16,34 +16,34 @@ while True:
         except ValueError:
             print('Isso não é um número válido! Tente de novo.')
 
-    if operação == '1':
+    if operaçao == '1':
         resultado = numero1 + numero2
         print(resultado)
-    elif operação == '2':
+    elif operaçao == '2':
         resultado = numero1 - numero2
         print(resultado)
-    elif operação == '3':
+    elif operaçao == '3':
         resultado = numero1 * numero2
         print(resultado)
-    elif operação == '4':
+    elif operaçao == '4':
         try:
             resultado = numero1 / numero2
             print(resultado)
         except ZeroDivisionError:
             print('Erro: não é possível dividir por zero!')
-    elif operação == '5':
+    elif operaçao == '5':
         try:
             resultado = numero1 // numero2
             print(resultado)
         except ZeroDivisionError:
             print('Erro: não é possível dividir por zero!')
-    elif operação == '6':
+    elif operaçao == '6':
         try:
             resultado = numero1 % numero2
             print(resultado)
         except ZeroDivisionError:
             print('Erro: não é possível dividir por zero!')
-    elif operação == '7':
+    elif operaçao == '7':
         resultado = numero1 ** numero2
         print(resultado)
 
@@ -51,5 +51,5 @@ while True:
         print('Operação inválida')
 
     continuar = input('Desejá fazer outro calculo? [S/N]:')
-    if continuar != 'S':
+    if continuar != 's':
         break
