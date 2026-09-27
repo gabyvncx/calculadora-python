@@ -6,7 +6,7 @@ while True:
     print('5 - Divisão inteira')
     print('6 - Módulo / Resto')
     print('7 - Potenciação')
-    operação = input('Escolha uma opção:')
+    operaçao = input('Escolha uma opção:')
 
     while True:
         try:
@@ -51,5 +51,5 @@ while True:
         print('Operação inválida')
 
     continuar = input('Desejá fazer outro calculo? [S/N]:')
-    if continuar != 's':
+    if continuar != 'S':
         break
